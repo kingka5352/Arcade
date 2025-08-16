@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Jeongman Park"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arcade 1</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+  <main class="wrap">
+
+    <h1>What would you like to do?</h1>
+
+    <div class="buttons">
+    <button onclick="guessingGame();">Guessing Game</button>
+    <button onclick="consultOracle();">Consult the Oracle</button>
+    <button onclick="bnh();">Bear, Ninja, Hunter</button>
+
+    </div>
+    <div id="farewell" hidden>
+  <p id="farewellMsg"></p>
+  <div class="reload-center">
+    <button class="reload" onclick="location.reload();">Reload</button>
+  </div>
+</div>
+    </div>
+
+  </main>
+  <script src="js/script.js"></script>
+  </div>
+</body>
+</html>

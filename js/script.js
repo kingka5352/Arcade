@@ -18,7 +18,7 @@ if(!another){
     }
   }
 }
-// arrow function — Guessing Game
+// Function(arrow)_Guessing Game
 window.guessingGame = () => {
   const randomNumber = Math.floor(Math.random() * 10) + 1;
   let guessCount = 0;
@@ -48,7 +48,7 @@ window.guessingGame = () => {
     }
   }
 };
-// function expression — Consult the Oracle
+// Function(Expressions)_Consult the Oracle
 window.consultOracle = function () {
   const q = prompt("Ask the Oracle a yes/no question:");
   if(q === null || String(q).trim() === ""){
@@ -71,7 +71,7 @@ window.consultOracle = function () {
   }
   alert("Oracle says: " + pick + "\n" + outcome);
 };
-// function declaration — Bear–Ninja–Hunter
+// Function(Declarations)_Bear Ninja Hunter
 function bnh(){
   const raw = prompt("Type one: Bear, Ninja, or Hunter");
   if(raw === null){ alert("Canceled."); return; }
@@ -109,7 +109,7 @@ window.guessingGame = window.guessingGame;
 
     if(!hasStart){
       function isYes(s){ return !!(s && String(s).trim().toLowerCase().startsWith('y')); }
-// session: rounds, then keep-playing/pick-another
+// session: rounds, then keep playing or pick another game
       function playingSession(roundFn){
         let keep = true;
         while(keep){

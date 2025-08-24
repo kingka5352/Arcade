@@ -105,7 +105,7 @@ window.guessingGame = window.guessingGame;
 // connect buttons to session loop
 (function(){
   try{
-    var hasStart = (typeof window.startPlaying === "function");
+    const hasStart = (typeof window.startPlaying === "function");
 
     if(!hasStart){
       function isYes(s){ return !!(s && String(s).trim().toLowerCase().startsWith('y')); }
@@ -118,11 +118,11 @@ window.guessingGame = window.guessingGame;
         }
         const another = isYes(prompt("Would you like to pick another game to play?  y/n")) ? true : false;
         if(!another){
-          var box = document.getElementById("farewell");
+          const box = document.getElementById("farewell");
           if(box){ box.hidden = false; }
-          var msg = document.getElementById("farewellMsg");
+          const msg = document.getElementById("farewellMsg");
           if(msg){ msg.textContent = "Thanks for playing the Arcade!"; }
-          var reload = document.getElementById("reloadBtn");
+          const reload = document.getElementById("reloadBtn");
           if(reload){ reload.addEventListener("click", function(){ location.reload(); }); }
         }
       }
